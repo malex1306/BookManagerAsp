@@ -1,0 +1,28 @@
+@{
+    ViewData["Title"] = "Bookmanager";
+}
+
+<div class="container mt-5 text-center">
+    <h1 class="mb-4">Bookmanager</h1>
+    
+    <div class="row justify-content-center">
+        <div class="col-md-4 d-flex justify-content-center">
+            <div class="card mb-4" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Bücherliste</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Sieh dir deine Bücher an</h6>
+                    <a asp-controller="Buecher" asp-action="Index" class="btn btn-primary">Zur Bücherliste</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+            <div class="card mb-4" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Neues Buch</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Füge ein neues Buch hinzu</h6>
+                    <a asp-controller="Buecher" asp-action="Create" class="btn btn-primary">Buch hinzufügen</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -2,7 +2,7 @@
     ViewData["Title"] = "DontRead";
 }
 @model IEnumerable<BuecherVerwaltungEmpty.Data.Buch>
-
+@Html.AntiForgeryToken()
 <h2>📚 Gelesene Bücher</h2>
 
 <table class="table table-bordered">
@@ -13,7 +13,6 @@
         <th>Verlag</th>
         <th>Jahr</th>
         <th>Bewertung</th>
-        <th>Bearbeiten</th>
     </tr>
     </thead>
     <tbody>
@@ -27,21 +26,42 @@
             <td>
                 @for (int i = 1; i <= 5; i++)
                 {
-                    if (i <= buch.Bewertung)
-                    {
-                        <span style="color: gold;">&#9733;</span> 
-                    }
-                    else
-                    {
-                        <span style="color: lightgray;">&#9733;</span> 
-                    }
+                    var starClass = i <= buch.Bewertung ? "text-warning" : "text-secondary";
+                    <span 
+                        class="rating-star @starClass" 
+                        data-id="@buch.Id" 
+                        data-rating="@i" 
+                        role="button"
+                        style="cursor:pointer; font-size: 1.2em;">
+                        &#9733;
+                    </span>
                 }
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@buch.Id" class="btn btn-warning btn-sm ms-1">✏️</a>
-            </td>
-            
         </tr>
     }
     </tbody>
 </table>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const stars = document.querySelectorAll('.rating-star');
+
+        stars.forEach(star => {
+            star.addEventListener('click', function () {
+                const id = this.dataset.id;
+                const rating = this.dataset.rating;
+
+                fetch('/Buecher/UpdateRating', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]')?.value
+                    },
+                    body: `id=${id}&rating=${rating}`
+                })
+                .then(res => {
+                    if (res.ok) location.reload(); 
+                });
+            });
+        });
+    });
+</script>

@@ -158,3 +158,4 @@
 /home/marcel/RiderProjects/BuecherVerwaltungEmpty/BuecherVerwaltungEmpty/obj/Debug/net8.0/BuecherVerwaltungEmpty.RazorAssemblyInfo.cs
 /home/marcel/RiderProjects/BuecherVerwaltungEmpty/BuecherVerwaltungEmpty/bin/Debug/net8.0/BuecherVerwaltungEmpty.staticwebassets.runtime.json
 /home/marcel/RiderProjects/BuecherVerwaltungEmpty/BuecherVerwaltungEmpty/bin/Debug/net8.0/libman.json
+/home/marcel/RiderProjects/BuecherVerwaltungEmpty/BuecherVerwaltungEmpty/obj/Debug/net8.0/BuecherVerwaltungEmpty.sourcelink.json

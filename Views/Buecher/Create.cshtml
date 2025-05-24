@@ -16,5 +16,19 @@
         <label asp-for="Autor"></label>
         <input asp-for="Autor" class="form-control"/>
     </div>
+    <div class="form-group">
+        <label asp-for="Verlag"></label>
+        <input asp-for="Verlag" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="Jahr"></label>
+        <input asp-for="Jahr" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="Bewertung" class="control-label">Bewertung (0–5)</label>
+        <input asp-for="Bewertung" class="form-control" min="0" max="5" type="number" />
+        <span asp-validation-for="Bewertung" class="text-danger"></span>
+    </div>
+
     <button type="submit" class="btn btn-primary">Speichern</button>
     </form>

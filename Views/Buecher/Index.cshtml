@@ -22,6 +22,10 @@
                 <tr>
                     <th scope="col">Titel</th>
                     <th scope="col">Autor</th>
+                    <th scope="col">Verlag</th>
+                    <th scope="col">Jahr</th>
+                    <th scope="col">Aktion</th>
+                    <th scope="col">Bewertung</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -30,6 +34,33 @@
                     <tr>
                         <td>@buch.Titel</td>
                         <td>@buch.Autor</td>
+                        <td>@buch.Verlag</td>
+                        <td>@buch.Jahr</td>
+                        <td>
+                            <form asp-action="MarkAsRead" asp-controller="Buecher" method="post" style="display:inline;">
+                                <input type="hidden" name="id" value="@buch.Id" />
+                                <button type="submit" class="btn btn-success btn-sm">✔ Gelesen</button>
+                            </form>
+                            <a asp-action="Edit" asp-route-id="@buch.Id" class="btn btn-warning btn-sm ms-1">✏️</a>
+                            <form asp-action="Delete" asp-controller="Buecher" method="post" class="d-inline ms-1"
+                                  onsubmit="return confirm('Willst du dieses Buch wirklich löschen?');">
+                                <input type="hidden" name="id" value="@buch.Id" />
+                                <button type="submit" class="btn btn-danger btn-sm">🗑️</button>
+                                <td>
+                                    @for (int i = 1; i <= 5; i++)
+                                    {
+                                        if (i <= buch.Bewertung)
+                                        {
+                                            <span style="color: gold;">&#9733;</span>
+                                        }
+                                        else
+                                        {
+                                            <span style="color: lightgray;">&#9733;</span>
+                                        }
+                                    }
+                                </td>
+                            </form>
+                        </td>
                     </tr>
                 }
                 </tbody>

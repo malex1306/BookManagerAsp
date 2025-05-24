@@ -32,6 +32,14 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQnVlY2hlci9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/marcel/RiderProjects/BuecherVerwaltungEmpty/BuecherVerwaltungEmpty/Views/Buecher/DontRead.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQnVlY2hlci9Eb250UmVhZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/marcel/RiderProjects/BuecherVerwaltungEmpty/BuecherVerwaltungEmpty/Views/Buecher/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQnVlY2hlci9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/marcel/RiderProjects/BuecherVerwaltungEmpty/BuecherVerwaltungEmpty/Views/Buecher/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQnVlY2hlci9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

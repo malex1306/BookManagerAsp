@@ -2,25 +2,48 @@
     ViewData["Title"] = "Bookmanager";
 }
 
-<div class="container mt-5 text-center">
-    <h1 class="mb-4">Bookmanager</h1>
-    
-    <div class="row justify-content-center">
-        <div class="col-md-4 d-flex justify-content-center">
-            <div class="card mb-4" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Bücherliste</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Sieh dir deine Bücher an</h6>
-                    <a asp-controller="Buecher" asp-action="Index" class="btn btn-primary">Zur Bücherliste</a>
+<style>
+    .card-equal-height {
+        min-height: 250px;
+    }
+</style>
+
+<div class="container mt-5">
+    <h1 class="mb-5 text-center display-4 fw-bold">Bookmanager</h1>
+
+    <div class="row justify-content-center g-4">
+        <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+            <div class="card shadow card-equal-height w-100">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title">Meine Bücher</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sieh dir deine Bücher an</h6>
+                    </div>
+                    <a asp-controller="Buecher" asp-action="Index" class="btn btn-primary mt-3">Zur Bücherliste</a>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 d-flex justify-content-center">
-            <div class="card mb-4" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Neues Buch</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Füge ein neues Buch hinzu</h6>
-                    <a asp-controller="Buecher" asp-action="Create" class="btn btn-primary">Buch hinzufügen</a>
+
+        <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+            <div class="card shadow card-equal-height w-100">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title">Neues Buch</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Füge ein neues Buch hinzu</h6>
+                    </div>
+                    <a asp-controller="Buecher" asp-action="Create" class="btn btn-primary mt-3">Buch hinzufügen</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+            <div class="card shadow card-equal-height w-100">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title">Gelesene Bücher</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Bücher, die du gelesen hast</h6>
+                    </div>
+                    <a asp-controller="Buecher" asp-action="DontRead" class="btn btn-primary mt-3">Ansehen</a>
                 </div>
             </div>
         </div>

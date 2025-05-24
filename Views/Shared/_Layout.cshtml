@@ -12,6 +12,19 @@
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/css/site.css" rel="stylesheet" />
+    <style>
+    html, body {
+        height: 100%;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        flex: 1;
+    }
+</style>
+
 
     @RenderSection("Styles", required: false)
 </head>
@@ -34,6 +47,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" asp-controller="Buecher" asp-action="Create">Neues Buch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Buecher" asp-action="DontRead">Gelesen</a>
                     </li>
                 </ul>
             </div>

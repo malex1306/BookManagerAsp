@@ -1,0 +1,47 @@
+@{
+    ViewData["Title"] = "DontRead";
+}
+@model IEnumerable<BuecherVerwaltungEmpty.Data.Buch>
+
+<h2>📚 Gelesene Bücher</h2>
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Titel</th>
+        <th>Autor</th>
+        <th>Verlag</th>
+        <th>Jahr</th>
+        <th>Bewertung</th>
+        <th>Bearbeiten</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var buch in Model)
+    {
+        <tr>
+            <td>@buch.Titel</td>
+            <td>@buch.Autor</td>
+            <td>@buch.Verlag</td>
+            <td>@buch.Jahr</td>
+            <td>
+                @for (int i = 1; i <= 5; i++)
+                {
+                    if (i <= buch.Bewertung)
+                    {
+                        <span style="color: gold;">&#9733;</span> 
+                    }
+                    else
+                    {
+                        <span style="color: lightgray;">&#9733;</span> 
+                    }
+                }
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@buch.Id" class="btn btn-warning btn-sm ms-1">✏️</a>
+            </td>
+            
+        </tr>
+    }
+    </tbody>
+</table>

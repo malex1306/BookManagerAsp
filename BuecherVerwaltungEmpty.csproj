@@ -25,4 +25,8 @@
       <Content Include="wwwroot\lib\bootstrap\css\.DS_Store" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Include="wwwroot\Assets\Pics\MainBackground.jpg" />
+    </ItemGroup>
+
 </Project>

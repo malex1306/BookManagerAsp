@@ -1,5 +1,26 @@
 body {
+    background-image: url('/Assets/Pics/MainBackground.jpg');
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-color: #121212;
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.card-milchig {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #000;
+}
+
+

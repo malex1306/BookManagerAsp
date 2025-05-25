@@ -1,29 +1,30 @@
 @{
     ViewData["Title"] = "DontRead";
+    Layout = "_Layout";
 }
 @model IEnumerable<BuecherVerwaltungEmpty.Data.Buch>
 @Html.AntiForgeryToken()
-<h2>📚 Gelesene Bücher</h2>
+<h2 class="mb-5 text-center display-1 fw-bold text-white-50">📚 Gelesene Bücher</h2>
 
-<table class="table table-bordered">
-    <thead>
+<table class="table table-hover table-bordered">
+    <thead class="table-dark">
     <tr>
-        <th>Titel</th>
-        <th>Autor</th>
-        <th>Verlag</th>
-        <th>Jahr</th>
-        <th>Bewertung</th>
+        <th scope="col" class="text-center">Titel</th>
+        <th scope="col" class="text-center">Autor</th>
+        <th scope="col" class="text-center">Verlag</th>
+        <th scope="col" class="text-center">Jahr</th>
+        <th scope="col" class="text-center">Bewertung</th>
     </tr>
     </thead>
     <tbody>
     @foreach (var buch in Model)
     {
         <tr>
-            <td>@buch.Titel</td>
-            <td>@buch.Autor</td>
-            <td>@buch.Verlag</td>
-            <td>@buch.Jahr</td>
-            <td>
+            <td class="text-center">@buch.Titel</td>
+            <td class="text-center">@buch.Autor</td>
+            <td class="text-center">@buch.Verlag</td>
+            <td class="text-center">@buch.Jahr</td>
+            <td class="text-center">
                 @for (int i = 1; i <= 5; i++)
                 {
                     var starClass = i <= buch.Bewertung ? "text-warning" : "text-secondary";
@@ -41,6 +42,9 @@
     }
     </tbody>
 </table>
+<div class="text-center mt-4">
+    <a asp-action="Index" asp-controller="Home" class="btn btn-secondary">Zurück</a>
+</div>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const stars = document.querySelectorAll('.rating-star');

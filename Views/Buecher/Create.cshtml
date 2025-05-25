@@ -1,34 +1,37 @@
 @{
     ViewData["Title"] = "Create";
+    Layout = "_Layout";
 }
 @model BuecherVerwaltungEmpty.Data.Buch
 
 
-<div class="container mt-5 text-center">
-    <h1 class="mb-4">Create new book</h1>
+<div class="container mt-2 text-center">
+    <h1 class="mb-5 text-center display-1 fw-bold text-white-50">Create new book</h1>
 </div>
-<form asp-action="Create">Create
-    <div class="form-group">
+<form asp-action="Create">
+    <div class="form-group m-5">
         <label asp-for="Titel"></label>
         <input asp-for="Titel" class="form-control"/>
     </div>
-    <div class="form-group">
+    <div class="form-group m-5">
         <label asp-for="Autor"></label>
         <input asp-for="Autor" class="form-control"/>
     </div>
-    <div class="form-group">
+    <div class="form-group m-5">
         <label asp-for="Verlag"></label>
         <input asp-for="Verlag" class="form-control"/>
     </div>
-    <div class="form-group">
+    <div class="form-group m-5">
         <label asp-for="Jahr"></label>
         <input asp-for="Jahr" class="form-control"/>
     </div>
-    <div class="form-group">
+    <div class="form-group m-5">
         <label asp-for="Bewertung" class="control-label">Bewertung (0–5)</label>
         <input asp-for="Bewertung" class="form-control" min="0" max="5" type="number" />
         <span asp-validation-for="Bewertung" class="text-danger"></span>
     </div>
-
-    <button type="submit" class="btn btn-primary">Speichern</button>
+    <div class="text-center mt-4">
+        <a asp-action="Index" asp-controller="Home" class="btn btn-secondary">Zurück</a>
+        <button type="submit" class="btn btn-secondary ">Speichern</button>
+    </div>
     </form>

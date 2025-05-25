@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ueq2RFQZoqS+eFdW4283dfS0qhMW0YKdz5UcQWglJMQ=",
+  "Hash": "29HNElsRsOmI1kwS9aSMgi5mOz00BFPJ/nJLMUxERwM=",
   "Source": "BuecherVerwaltungEmpty",
   "BasePath": "_content/BuecherVerwaltungEmpty",
   "Mode": "Default",
@@ -17,6 +17,27 @@
   ],
   "Assets": [
     {
+      "Identity": "/home/marcel/RiderProjects/BuecherVerwaltungEmpty/BuecherVerwaltungEmpty/wwwroot/Assets/Pics/MainBackground.jpg",
+      "SourceId": "BuecherVerwaltungEmpty",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/marcel/RiderProjects/BuecherVerwaltungEmpty/BuecherVerwaltungEmpty/wwwroot/",
+      "BasePath": "_content/BuecherVerwaltungEmpty",
+      "RelativePath": "Assets/Pics/MainBackground#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "omieff0wlf",
+      "Integrity": "0GCTxcPkQtY1ZEVqhcLj3MHaFq7iEfqGgigbZ6sN6XY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Assets/Pics/MainBackground.jpg"
+    },
+    {
       "Identity": "/home/marcel/RiderProjects/BuecherVerwaltungEmpty/BuecherVerwaltungEmpty/wwwroot/css/site.css",
       "SourceId": "BuecherVerwaltungEmpty",
       "SourceType": "Discovered",
@@ -31,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "mgp83rnkg8",
-      "Integrity": "5tFpMQ9tJvQB2h1xrcd3xo0cz8vA0YWLgC5yVOJ3/pU=",
+      "Fingerprint": "cir3pvpl08",
+      "Integrity": "/OzuyZZrofaujEQ8ZBaHF3Yjv2O9MMrZq7MnuoQW+6U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
@@ -985,6 +1006,133 @@
   ],
   "Endpoints": [
     {
+      "Route": "Assets/Pics/MainBackground.jpg",
+      "AssetFile": "/home/marcel/RiderProjects/BuecherVerwaltungEmpty/BuecherVerwaltungEmpty/wwwroot/Assets/Pics/MainBackground.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29528"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0GCTxcPkQtY1ZEVqhcLj3MHaFq7iEfqGgigbZ6sN6XY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 11:55:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0GCTxcPkQtY1ZEVqhcLj3MHaFq7iEfqGgigbZ6sN6XY="
+        }
+      ]
+    },
+    {
+      "Route": "Assets/Pics/MainBackground.omieff0wlf.jpg",
+      "AssetFile": "/home/marcel/RiderProjects/BuecherVerwaltungEmpty/BuecherVerwaltungEmpty/wwwroot/Assets/Pics/MainBackground.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29528"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0GCTxcPkQtY1ZEVqhcLj3MHaFq7iEfqGgigbZ6sN6XY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 11:55:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "omieff0wlf"
+        },
+        {
+          "Name": "label",
+          "Value": "Assets/Pics/MainBackground.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0GCTxcPkQtY1ZEVqhcLj3MHaFq7iEfqGgigbZ6sN6XY="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.cir3pvpl08.css",
+      "AssetFile": "/home/marcel/RiderProjects/BuecherVerwaltungEmpty/BuecherVerwaltungEmpty/wwwroot/css/site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "589"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/OzuyZZrofaujEQ8ZBaHF3Yjv2O9MMrZq7MnuoQW+6U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 13:01:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cir3pvpl08"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/OzuyZZrofaujEQ8ZBaHF3Yjv2O9MMrZq7MnuoQW+6U="
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "/home/marcel/RiderProjects/BuecherVerwaltungEmpty/BuecherVerwaltungEmpty/wwwroot/css/site.css",
       "Selectors": [],
@@ -995,7 +1143,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "81"
+          "Value": "589"
         },
         {
           "Name": "Content-Type",
@@ -1003,11 +1151,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5tFpMQ9tJvQB2h1xrcd3xo0cz8vA0YWLgC5yVOJ3/pU=\""
+          "Value": "\"/OzuyZZrofaujEQ8ZBaHF3Yjv2O9MMrZq7MnuoQW+6U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 08:25:34 GMT"
+          "Value": "Sat, 24 May 2025 13:01:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1017,52 +1165,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5tFpMQ9tJvQB2h1xrcd3xo0cz8vA0YWLgC5yVOJ3/pU="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.mgp83rnkg8.css",
-      "AssetFile": "/home/marcel/RiderProjects/BuecherVerwaltungEmpty/BuecherVerwaltungEmpty/wwwroot/css/site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "81"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"5tFpMQ9tJvQB2h1xrcd3xo0cz8vA0YWLgC5yVOJ3/pU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 08:25:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "mgp83rnkg8"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-5tFpMQ9tJvQB2h1xrcd3xo0cz8vA0YWLgC5yVOJ3/pU="
+          "Value": "sha256-/OzuyZZrofaujEQ8ZBaHF3Yjv2O9MMrZq7MnuoQW+6U="
         }
       ]
     },

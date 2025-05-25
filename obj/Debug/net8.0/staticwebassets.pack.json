@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "/home/marcel/RiderProjects/BuecherVerwaltungEmpty/BuecherVerwaltungEmpty/wwwroot/Assets/Pics/MainBackground.jpg",
+      "PackagePath": "staticwebassets/Assets/Pics/MainBackground.jpg"
+    },
+    {
       "Id": "/home/marcel/RiderProjects/BuecherVerwaltungEmpty/BuecherVerwaltungEmpty/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

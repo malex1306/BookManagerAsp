@@ -1,5 +1,23 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Assets\Pics\MainBackground.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>BuecherVerwaltungEmpty</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BuecherVerwaltungEmpty</BasePath>
+      <RelativePath>Assets/Pics/MainBackground.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>omieff0wlf</Fingerprint>
+      <Integrity>0GCTxcPkQtY1ZEVqhcLj3MHaFq7iEfqGgigbZ6sN6XY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Assets\Pics\MainBackground.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))">
       <SourceType>Package</SourceType>
       <SourceId>BuecherVerwaltungEmpty</SourceId>
@@ -12,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>mgp83rnkg8</Fingerprint>
-      <Integrity>5tFpMQ9tJvQB2h1xrcd3xo0cz8vA0YWLgC5yVOJ3/pU=</Integrity>
+      <Fingerprint>cir3pvpl08</Fingerprint>
+      <Integrity>/OzuyZZrofaujEQ8ZBaHF3Yjv2O9MMrZq7MnuoQW+6U=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
